@@ -1,6 +1,6 @@
 package MateAcademy;
 
-public class intCentury {
+public class IntCentury {
     public static void main(String[] args) {
         century(2000);
         centuryl(2000);

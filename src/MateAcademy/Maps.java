@@ -1,22 +1,25 @@
 package MateAcademy;
 
 import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Map;
 
 public class Maps {
+
     public static void main(String[] args) {
-        int[] array = {2, 3, 5};
-        map(array);
-        System.out.println(map(array));
+        int[] doubled = {3, 5, 6};
+        System.out.println(Arrays.toString(map(doubled)));
 
     }
 
     static int[] map(int[] arr) {
-        int[] count = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] *= 2;
 
-        for (int i = 0; i < count.length; i++) {
-            count[i] = count[i * 2];
+
         }
-        return count;
+        return arr;
     }
 
 }
+
