@@ -5,7 +5,8 @@ import java.util.Arrays;
 
 public class MonkeyCounter {
     public static void main(String[] args) {
-        monkeyCount(20);
+        System.out.println(Arrays.toString(monkeyCount(20)));
+
 
     }
 
