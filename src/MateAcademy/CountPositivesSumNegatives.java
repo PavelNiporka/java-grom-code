@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class CountPositivesSumNegatives {
     public static void main(String[] args) {
-        int[] array = {2, 5, -6, 3, 4, 3};
+        int[] array = {};
         System.out.print(Arrays.toString(countPositivesSumNegatives(array)));
 
     }
