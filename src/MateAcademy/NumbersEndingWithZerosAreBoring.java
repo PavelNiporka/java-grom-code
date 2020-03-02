@@ -4,7 +4,7 @@ import java.util.spi.AbstractResourceBundleProvider;
 
 public class NumbersEndingWithZerosAreBoring {
     public static void main(String[] args) {
-        System.out.println(noBoringZeros(0));
+        System.out.println(noBoringZeros(345435000));
 
     }
 

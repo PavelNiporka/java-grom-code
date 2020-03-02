@@ -2,8 +2,9 @@ package MateAcademy;
 
 public class IntCentury {
     public static void main(String[] args) {
-        century(2000);
-        centuryl(2000);
+        //century(2099);
+        System.out.println(centuryl(1999));
+
 
     }
 
@@ -18,7 +19,7 @@ public class IntCentury {
         return centuryCount;
     }
     public static int centuryl(int numbers) {
-        System.out.print(numbers);
+       // System.out.println(numbers);
         return (numbers + 99) / 100;
     }
 
