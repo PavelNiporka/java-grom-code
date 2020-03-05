@@ -38,9 +38,9 @@ public class Tests {
         if (nums.length == 0)
             return 0;
         int min = nums[0];
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] < min)
-                min = nums[i];
+        for (int num : nums) {
+            if (num < min)
+                min = num;
         }
         return min;
     }

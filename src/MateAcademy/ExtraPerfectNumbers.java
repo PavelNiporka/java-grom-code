@@ -12,6 +12,7 @@ public class ExtraPerfectNumbers {
     }
 
     public static int[] extraPerfect(int number) {
+
         int[] set = new int[(number + 1) / 2];
         for (int i = 0; i < set.length; i++)
             set[i] = 1 + i * 2;
