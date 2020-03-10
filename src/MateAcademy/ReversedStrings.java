@@ -10,12 +10,11 @@ public class ReversedStrings {
 
     public static String solution(String str) {
         // return new StringBuilder(str).reverse().toString();
-        String result = "";
+        String res = "";
         for (int i = str.length() - 1; i >= 0; i--) {
-            result = result + str.charAt(i);
+            res = res + str.charAt(i);
         }
-        return result;
-
+        return res;
     }
 
 }

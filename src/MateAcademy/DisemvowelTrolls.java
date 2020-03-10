@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class DisemvowelTrolls {
 
     public static void main(String[] args) {
-        String text = "zdes text iz";
+        String text = "This website is for losers LOL!";
         // Вывод текста
-        System.out.println(text);
+        // //System.out.println(disem(text));
 
         String[] strArr = text.split(" ");//разбиваем текст на массив слов
         StringBuilder sb = new StringBuilder();
@@ -24,22 +24,31 @@ public class DisemvowelTrolls {
         String outText = sb.toString().trim();
 
         // вывод результата
-        System.out.print(outText + " " + "\n\n");
+        //   System.out.print(outText + " " + "\n\n");
 
 
     }
 
 
     public static String disemvowel(String str) {
-        StringBuilder sb = new StringBuilder();
-        String[] string = str.split(" ");
-        for (String s : string) {
-            char first = s.charAt(0);
-            if (first == 'A' || first == 'a' || first == 'E' || first == 'e' ||
-                    first == 'O' || first == 'o' || first == 'I' || first == 'i')
-                sb.append(s).append(" ");
+        String string = "";
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) != 'a'
+                    && str.charAt(i) != 'e'
+                    && str.charAt(i) != 'i'
+                    && str.charAt(i) != 'o'
+                    && str.charAt(i) != 'u'
+                    && str.charAt(i) != 'A'
+                    && str.charAt(i) != 'E'
+                    && str.charAt(i) != 'I'
+                    && str.charAt(i) != 'O'
+                    && str.charAt(i) != 'U') {
+                string = string + str.charAt(i);
+            }
         }
-        return null;
+        return string;
+
     }
+
 
 }
